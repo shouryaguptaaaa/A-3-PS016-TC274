@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+body { @apply bg-navy-950 text-slate-100 antialiased; }
+:focus-visible { outline: 2px solid #22d3ee; outline-offset: 2px; }
+.recharts-tooltip-wrapper { outline: none; }

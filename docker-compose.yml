@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: sqlite:////data/handoverlab.db
+      CORS_ORIGINS: http://localhost:8080
+    volumes:
+      - handoverlab-data:/data
+    expose:
+      - "8000"
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+volumes:
+  handoverlab-data:

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+.env
+*.log
+.DS_Store
+handoverlab.zip
